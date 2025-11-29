@@ -5,7 +5,7 @@ import CanvasLoader from '../layout/Loader';
 
 const Computers: FC<{ isMobile?: boolean }> = ({ isMobile = false }) => {
 
-   const computer = useGLTF('/3D_PortfolioTemplate/desktop_pc/scene.gltf');
+   const computer = useGLTF('./desktop_pc/scene.gltf');
 
    return (
       <mesh>

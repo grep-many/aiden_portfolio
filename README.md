@@ -34,8 +34,8 @@ A modern 3D developer portfolio template built with React, Vite, TailwindCSS, Th
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/grep-many/3D_PortfolioTemplate.git
-cd 3D_PortfolioTemplate
+git clone https://github.com/grep-many/aiden_portfolio.git
+cd aiden_portfolio
 ```
 
 ### 2. Install Dependencies

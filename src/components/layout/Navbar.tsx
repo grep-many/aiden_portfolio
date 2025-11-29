@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { styles } from '../../styles';
 import { navLinks } from '../../constants';
 import { logo, menu, close } from '../../assets';
@@ -32,8 +31,7 @@ const Navbar = () => {
          className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary/50 backdrop-blur-sm`}
       >
          <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-            <Link
-               to="/"
+            <a
                className="flex items-center gap-2"
                onClick={() => {
                   setActive('');
@@ -51,7 +49,7 @@ const Navbar = () => {
                                 Brooks
                   </span>
                </p>
-            </Link>
+            </a>
             <ul className="list-none hidden sm:flex flex-row gap-10">
                {navLinks.map((link) => (
                   <li
