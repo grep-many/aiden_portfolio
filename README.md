@@ -1,93 +1,158 @@
-# 3D Portfolio Template
+# Aiden Portfolio — Modern 3D Developer Portfolio
 
-A modern 3D developer portfolio template built with React, Vite, TailwindCSS, Three.js, @react-three/fiber, and framer-motion. This template showcases 3D visuals, developer experience, interactive UI, and elegant animations.
+![Build](https://img.shields.io/github/actions/workflow/status/grep-many/aiden_portfolio/deploy.yml?label=Build)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![React](https://img.shields.io/badge/React-19-61DAFB)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38BDF8)
+![Three.js](https://img.shields.io/badge/Three.js-0.176-black)
+
+A modern, fully animated **3D developer portfolio** built with **React**, **Vite**, **TailwindCSS**, **Three.js**, and **@react-three/fiber**, featuring smooth 3D scenes, elegant animations, and a fully working EmailJS contact form.
 
 ---
 
-## 🚀 Features
+## ✨ Overview
 
-- ⚙️ Built with **Vite** for fast performance and lightweight bundling.
-- 🎨 TailwindCSS for rapid UI development.
-- 🧩 Uses **Three.js** and **@react-three/fiber** to render interactive 3D models.
-- 🔁 Reusable and animated components with **framer-motion**.
-- 📧 Email integration via **EmailJS** for functional contact form.
-- 📱 Responsive across all screen sizes with mobile-friendly adjustments.
+Aiden Portfolio is a sleek, production-ready 3D portfolio template designed for developers who want interactive visuals, professional animations, and a clean layout.
+
+### You get:
+- 🌐 3D animated models using **Three.js**
+- 🌀 Smooth UI/UX animations using **framer-motion**
+- 📩 Fully functional EmailJS contact form
+- 📱 100% responsive design
+- ⚡ Lightning‑fast performance powered by **Vite**
+
+---
+
+## 🖥️ Desktop Preview
+
+> Replace this screenshot with your own: `./screenshots/desktop.png`
+
+![desktop-preview](./screenshots/preview.png)
 
 ---
 
 ## 📦 Tech Stack
 
-- **React 19**
-- **Vite 6**
-- **TypeScript**
-- **TailwindCSS 3**
-- **Three.js**
-- **@react-three/fiber**
-- **@react-three/drei**
-- **framer-motion**
-- **EmailJS**
+### **Frontend**
+- React 19  
+- TypeScript  
+- Vite 6  
+- TailwindCSS 3.4  
+- Framer Motion 12  
+
+### **3D & Animation**
+- Three.js  
+- @react-three/fiber  
+- @react-three/drei  
+- maath  
+- react-parallax-tilt  
+
+### **Contact / Email**
+- EmailJS (`@emailjs/browser`)
+
+### **Helpers**
+- prop-types  
+- react-vertical-timeline-component  
 
 ---
 
 ## 🛠️ Getting Started
 
-### 1. Clone the Repository
-
+### 1. Clone Repository
 ```bash
 git clone https://github.com/grep-many/aiden_portfolio.git
 cd aiden_portfolio
 ```
 
 ### 2. Install Dependencies
-
 ```bash
-npm install --legacy-peer-deps
+npm install
 ```
 
-### 3. Set Environment Variables
-
-Create a `.env` file and add the following variables:
-
+### 3. Create Environment File
 ```env
-VITE_EMAILJS_PUBLIC_KEY=your_key_here
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
 VITE_EMAILJS_SERVICE_ID=your_service_id
 VITE_EMAILJS_TEMPLATE_ID=your_template_id
-VITE_TOEMAIL=your@emailId
+VITE_TOEMAIL=your@email
 ```
 
-### 4. Run Development Server
-
+### 4. Start Development Server
 ```bash
 npm run dev
 ```
 
 ---
 
+## 📁 Folder Structure
+
+```
+.
+├── public
+│   ├── desktop_pc          # 3D Computer model
+│   └── planet              # 3D Planet model
+├── src
+│   ├── assets
+│   ├── components
+│   │   ├── canvas          # 3D Components
+│   │   └── sections        # Page Sections
+│   ├── constants
+│   ├── hoc
+│   ├── utils
+│   ├── styles.ts
+│   ├── App.tsx
+│   └── main.tsx
+└── vite.config.ts
+```
+
+---
+
+## 🚀 Features
+
+- 🌌 Interactive **Three.js 3D scenes**
+- ⚡ Vite-powered performance
+- 🎨 Tailwind utility-first design
+- 🔁 Reusable components & animations
+- 💬 EmailJS integration
+- 📱 Fully responsive
+
+---
+
+## 📬 Contact Integration
+
+Email functionality is powered by **EmailJS**:
+
+```ts
+import emailjs from "@emailjs/browser";
+
+emailjs.send(
+  serviceID,
+  templateID,
+  templateParams,
+  publicKey
+);
+```
+
+Just fill your `.env` values to make it work.
+
+---
 
 ## 🧪 Scripts
 
-| Command         | Description             |
-|----------------|-------------------------|
-| `npm run dev`  | Run in development mode |
-| `npm run build`| Build the app           |
-| `npm run preview` | Preview built app   |
-| `npm run lint` | Run linter               |
+```json
+{
+  "dev": "vite",
+  "build": "tsc -b && vite build",
+  "preview": "vite preview",
+  "lint": "eslint ."
+}
+```
 
 ---
 
-## 📬 Contact Functionality
+## 🪪 License
 
-Contact form sends email using **EmailJS**. Fill in your EmailJS public key, service ID, and template ID in the `.env` file to make it functional.
+[![License:
+MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 
----
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-## 🌟 Credits
-
-- Designed & developed as an open-source 3D portfolio template.
-- Inspired by Three.js and modern developer portfolio trends.
+This project is open-sourced under the MIT License © 2025 Manish.

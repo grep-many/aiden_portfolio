@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install dependencies (with legacy peer deps)
+      - name: Install dependencies
         run: npm ci
 
       - name: Check if all required VITE secrets are available
