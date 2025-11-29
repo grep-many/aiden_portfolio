@@ -5,7 +5,7 @@ import { styles } from '../../styles';
 import { EarthCanvas } from '../canvas';
 import { SectionWrapper } from '../../hoc';
 import { slideIn } from '../../utils/motion';
-import { Tilt } from 'react-tilt';
+import Tilt from 'react-parallax-tilt';
 import Modal from '../Modal';
 
 const Contact = () => {
@@ -84,11 +84,10 @@ const Contact = () => {
                variants={slideIn('left', 'tween', 0.2, 1)}
             >
                <Tilt
-                  options={{
-                     max: 45,
-                     scale: 1,
-                     speed: 450,
-                  }}
+        tiltMaxAngleX={45}
+        tiltMaxAngleY={45}
+        scale={1}
+        transitionSpeed={450}
                   className="flex-[0.75] bg-black-100 p-8 rounded-2xl md:m-[50px]"
                >
                   <p className={styles.sectionSubText}>Get in touch</p>
