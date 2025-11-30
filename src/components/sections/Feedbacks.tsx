@@ -14,7 +14,7 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
   image,
 }) => {
   return (
-    <motion.div variants={fadeIn("", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn(undefined, "spring", index * 0.5, 0.75)}>
       <Tilt
         tiltMaxAngleX={45}
         tiltMaxAngleY={45}

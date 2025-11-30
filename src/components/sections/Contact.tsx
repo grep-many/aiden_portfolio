@@ -1,12 +1,13 @@
-import { useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../../styles";
-import { EarthCanvas } from "../canvas";
 import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
 import Tilt from "react-parallax-tilt";
 import Modal from "../Modal";
+
+const EarthCanvas = React.lazy(()=>import("../canvas/Earth"))
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -77,7 +78,7 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <React.Suspense fallback={ <div className="text-white">Loading...</div>}>
       <div className="flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row">
         <motion.div variants={slideIn("left", "tween", 0.2, 1)}>
           <Tilt
@@ -143,7 +144,7 @@ const Contact = () => {
         </motion.div>
       </div>
       {isModalVisible && <Modal setIsModalVisible={setIsModalVisible} {...modalContent} />}
-    </>
+    </React.Suspense>
   );
 };
 

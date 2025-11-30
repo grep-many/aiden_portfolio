@@ -35,7 +35,7 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn(undefined, undefined, 0.1, 1)}
         className="mt-4 max-w-3xl text-[17px] leading-[30px] text-secondary"
       >
         I'm a skilled software developer specializing in TypeScript and JavaScript, with deep

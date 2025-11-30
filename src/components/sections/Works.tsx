@@ -61,7 +61,7 @@ const Works = () => {
 
       <div className="flex w-full">
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn(undefined, undefined, 0.1, 1)}
           className="mt-3 max-w-3xl text-[17px] leading-[30px] text-secondary"
         >
           The following projects demonstrate my skills and experience through real-world

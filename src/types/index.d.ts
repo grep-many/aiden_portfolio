@@ -37,8 +37,8 @@ declare type TNavLink = {
 declare type TService = Required<Omit<TCommonProps, "name">>;
 
 declare type TMotion = {
-  direction: "up" | "down" | "left" | "right" | "";
-  type: "tween" | "spring" | "just" | "";
+  direction?: "up" | "down" | "left" | "right" ;
+  type?: "tween" | "spring" | "inertia" ;
   delay: number;
   duration: number;
 };

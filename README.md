@@ -25,8 +25,6 @@ Aiden Portfolio is a sleek, production-ready 3D portfolio template designed for 
 
 ## 🖥️ Desktop Preview
 
-> Replace this screenshot with your own: `./screenshots/desktop.png`
-
 ![desktop-preview](./screenshots/preview.png)
 
 ---
